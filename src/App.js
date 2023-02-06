@@ -11,14 +11,12 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 
 import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";
-import { Navigation } from "swiper";
 
 const App = () => {
   const [count, setCount] = useState(0);
   const [state, setState] = useState({
     mood: [],
   });
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   // useEffect om te checken of er iets update als dat gebeurd en er is een token dan interval initieren
@@ -35,7 +33,7 @@ const App = () => {
   const tickerInterval = () => {
     const interval = setInterval(() => {
       setCount((count) => count + 1);
-      console.log(state)
+      console.log(state, count)
     }, 1000);
     return interval;
   };
@@ -83,7 +81,7 @@ const App = () => {
 
   return (
     <>
-      {/* if state.player bestaat render PLayer component en geef de data mee als prop */}
+      {/* if state.mood niet leeg is render de lijst met moods */}
       <header>
         {state.mood && (
           <ul className="selectedMoodList">
