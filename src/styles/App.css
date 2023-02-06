@@ -10,8 +10,8 @@ body {
 .btn {
   background-color: transparent;
   border-radius: 2em;
-  border: 1px solid #1db954;
-  color: #1db954;
+  border: 1px solid #F56EBD;
+  color: #F56EBD;
   cursor: pointer;
   font-size: 3vmin;
   padding: 0.7em 1.5em;
@@ -19,9 +19,29 @@ body {
   text-decoration: none;
 }
 
+audio {
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: #F56EBD;
+  border-radius: 2em;
+  border: 1px solid #F56EBD;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
 .btn:hover {
-  background: #1db954;
-  color: #191414;
+  background: #F56EBD;
+  color: #FFF;
+}
+
+.btn-secondary:hover {
+  background: #D765A8;
 }
 
 .btn--login {

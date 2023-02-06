@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #12D861;
 }
 
 h1,
@@ -13,35 +14,83 @@ h3 {
 }
 
 header {
-  background-color: #191414;
+  display: flex;
+  justify-content: center;
   color: #fff;
 }
 
-.now-playing-img img {
-  width: 15vw;
-  height: auto;
-  border-radius: 10px;
+header ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  gap: 1em;
 }
 
-.player-wrapper {
+header ul li {
+  text-transform: capitalize;
+}
+
+.swiper-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.trackSlide-inner {
   display: flex;
   flex-direction: row;
-  padding: 1em;
-  align-items: center;
+  margin-top: 4em;
+}
+
+.trackCredentials {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+}
+
+.albumCover-container img {
+  width: 200px;
+  height: 200px;
+}
+
+section.moodButtons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+section.moodButtons button > * {
+  display: flex;
+  flex-direction: column;
+}
+
+section.moodButtons button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
   width: 100%;
 }
 
-.now-playing-info {
-  padding-left: 1em;
+section.moodButtons button:hover {
+  background-color: #ccc;
 }
 
-.now-playing-icon {
-  width: 4em;
-  height: auto;
+section.moodButtons button span {
+  font-size: 60px;
 }
 
-.artist-avatar {
-  height: 7.5em;
-  width: 7.5em;
-  border-radius: 50%;
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #F56EBD !important;
+}
+
+.swiper-pagination-progressbar {
+  background: rgba(0,0,0,.15) !important;
 }
