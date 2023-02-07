@@ -1,6 +1,6 @@
 {
   "name": "spotify-player",
-  "description": "Realtime spotify player",
+  "description": "Application with the Spotify API to let the user hear songs based on the chosen mood",
   "version": "0.1.0",
   "author": "Davey",
   "license": "MIT",
